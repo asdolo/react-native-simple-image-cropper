@@ -97,9 +97,8 @@ class App extends React.Component {
         ...prevState,
         croppedImage: result,
       }));
-    } catch (error) {
-      console.log(error);
-    }
+      // eslint-disable-next-line no-empty
+    } catch (error) {}
   };
 
   render() {

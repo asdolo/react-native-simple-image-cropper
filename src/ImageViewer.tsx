@@ -6,7 +6,7 @@ import {
   PinchGestureHandler,
   State,
 } from 'react-native-gesture-handler';
-import Animated, { EasingNode } from 'react-native-reanimated';
+import Animated, { Easing } from 'react-native-reanimated';
 import { timing } from 'react-native-redash';
 import { IImageViewerData } from './types';
 
@@ -93,7 +93,7 @@ class ImageViewer extends Component<IProps> {
 
     const timingDefaultParams = {
       duration: 200,
-      easing: EasingNode.linear,
+      easing: Easing.linear,
     };
 
     const maxScale = minScale + 3;
